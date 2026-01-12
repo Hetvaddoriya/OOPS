@@ -9,17 +9,18 @@ class Practical_6
 	  digit = p8.nextInt();
 	  while(digit!=0)
 		{
-		 temp = digit%10;
-    		 sum =temp+1;	
+		 temp = digit%10; //56798
+    		 sum =temp+1;	//
 			if(sum==10)
 			{
 			  sum=0;
 			}
-			num = sum*place+num;
-			place = place*10;
+			num = sum*place+num; //9
+			place = place*10; //100
 			digit =digit/10;
 		}
 		 System.out.println(" the value of digit"+num);
 
 	}
+
 }
