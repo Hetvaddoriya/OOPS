@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
-public class PasswordValidator {
+class PasswordCheck {
 
     public static boolean isValidPassword(String password) {
-        
+
+        int digitCount = 0;
+
         if (password.length() < 8) {
             return false;
         }
 
-        int digitCount = 0;
-
         for (int i = 0; i < password.length(); i++) {
+
             char ch = password.charAt(i);
 
             if (!Character.isLetterOrDigit(ch)) {
@@ -22,18 +23,216 @@ public class PasswordValidator {
             }
         }
 
-        return digitCount >= 2;
+        if (digitCount < 2) {
+            return false;
+        }
+
+        return true;
     }
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a password: ");
+        System.out.print("Enter your password: ");
         String password = sc.nextLine();
 
         if (isValidPassword(password)) {
             System.out.println("Valid Password");
-        } else {
+        } 
+        else {
+            System.out.println("Invalid Password");
+        }
+
+        sc.close();
+    }
+}import java.util.Scanner;
+
+class PasswordCheck {
+
+    public static boolean isValidPassword(String password) {
+
+        int digitCount = 0;
+
+        if (password.length() < 8) {
+            return false;
+        }
+
+        for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (!Character.isLetterOrDigit(ch)) {
+                return false;
+            }
+
+            if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+        }
+
+        if (digitCount < 2) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your password: ");
+        String password = sc.nextLine();
+
+        if (isValidPassword(password)) {
+            System.out.println("Valid Password");
+        } 
+        else {
+            System.out.println("Invalid Password");
+        }
+
+        sc.close();
+    }
+}import java.util.Scanner;
+
+class PasswordCheck {
+
+    public static boolean isValidPassword(String password) {
+
+        int digitCount = 0;
+
+        if (password.length() < 8) {
+            return false;
+        }
+
+        for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (!Character.isLetterOrDigit(ch)) {
+                return false;
+            }
+
+            if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+        }
+
+        if (digitCount < 2) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your password: ");
+        String password = sc.nextLine();
+
+        if (isValidPassword(password)) {
+            System.out.println("Valid Password");
+        } 
+        else {
+            System.out.println("Invalid Password");
+        }
+
+        sc.close();
+    }
+}import java.util.Scanner;
+
+class PasswordCheck {
+
+    public static boolean isValidPassword(String password) {
+
+        int digitCount = 0;
+
+        if (password.length() < 8) {
+            return false;
+        }
+
+        for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (!Character.isLetterOrDigit(ch)) {
+                return false;
+            }
+
+            if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+        }
+
+        if (digitCount < 2) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your password: ");
+        String password = sc.nextLine();
+
+        if (isValidPassword(password)) {
+            System.out.println("Valid Password");
+        } 
+        else {
+            System.out.println("Invalid Password");
+        }
+
+        sc.close();
+    }
+}import java.util.Scanner;
+
+class PasswordCheck {
+
+    public static boolean isValidPassword(String password) {
+
+        int digitCount = 0;
+
+        if (password.length() < 8) {
+            return false;
+        }
+
+        for (int i = 0; i < password.length(); i++) {
+
+            char ch = password.charAt(i);
+
+            if (!Character.isLetterOrDigit(ch)) {
+                return false;
+            }
+
+            if (Character.isDigit(ch)) {
+                digitCount++;
+            }
+        }
+
+        if (digitCount < 2) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your password: ");
+        String password = sc.nextLine();
+
+        if (isValidPassword(password)) {
+            System.out.println("Valid Password");
+        } 
+        else {
             System.out.println("Invalid Password");
         }
 
