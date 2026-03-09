@@ -31,7 +31,7 @@ System.out.println("Interest Rate Update to:"+interestrate+"%");
 {
   bankaccount b1=new bankaccount();
   bankaccount b2 =new bankaccount();
-  b1.assignvalue("nikunj",100000000);
+  b1.assignvalue("nikunj",10000000);
   b2.assignvalue("het",50000000);
   System.out.println("Befor rate change");
   b1.display();
@@ -41,4 +41,5 @@ System.out.println("Interest Rate Update to:"+interestrate+"%");
   b1.display();
   b2.display();
 }
+
 }
