@@ -1,17 +1,19 @@
 import java.util.Scanner;
 
-public class College {
-    private String collegeName;
+class College {
 
-    public College(String collegeName) {
+    String collegeName;
+
+    College(String collegeName) {
         this.collegeName = collegeName;
     }
 
     class Admission {
-        private String studentName;
-        private String course;
 
-        public void acceptDetails() {
+        String studentName;
+        String course;
+
+        void acceptDetails() {
             Scanner sc = new Scanner(System.in);
 
             System.out.print("Enter Student Name: ");
@@ -21,21 +23,18 @@ public class College {
             course = sc.nextLine();
         }
 
-        public void displayDetails() {
-            System.out.println("\n----- Admission Details -----");
+        void displayDetails() {
+            System.out.println("\n--- Admission Details ---");
             System.out.println("College Name : " + collegeName);
             System.out.println("Student Name : " + studentName);
-            System.out.println("Course       : " + course);
+            System.out.println("Course : " + course);
         }
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter College Name: ");
-        String name = sc.nextLine();
+        College college = new College("SIT Engineering College");
 
-        College college = new College(name);
         College.Admission admission = college.new Admission();
 
         admission.acceptDetails();
